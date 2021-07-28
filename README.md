@@ -13,6 +13,7 @@
 ![이미지](./img/settings_theme.png)  
 
 이제 여기에서 'Open Theme Folder' 를 누르고  
+(만약 폴더가 열리지 않는다면 윈도우키+R %AppData%\BetterDiscord\themes 입력 후 엔터)  
 뜨는 해당 폴더 안에 [릴리즈 탭](https://github.com/qwreey75/CherryCord/releases) 에서 받은 'cherrycord.theme.css' 파일을 집어넣고  
 디스코드로 들어가서 테마를 켜주면 끝!  
 
