@@ -1,0 +1,14 @@
+/**
+ * @name Cherry Blossom
+ * @author Qwreey75 (know as 쿼리)
+ * @version 1.0.0
+ * @description 벚꽃색 태마!!!!!!!!!!!!!
+ * @source https://github.com/qwreey75/CherryCord
+**/
+
+* {
+    /* set this to what you want to use font */
+    font-family: "둥근모꼴"; /* 이 안에 원하는 폰트를 쓰면 됨 */
+}
+
+@import "https://raw.githubusercontent.com/qwreey75/CherryCord/master/src/main.css";
