@@ -1,3 +1,4 @@
+/* main color */
 :root {
 	/* IMPORT LIGHT THEME */
 	--header-primary: #060607;
@@ -79,44 +80,55 @@
 	--scrollbar-thin-thumb: var(--content-darker) !important;
 }
 
+/* gif/emoji tab */
 #gif-picker-tab-panel {
 	background-color: var(--content-mid) !important;
 }
 
+/* chat background */
 [class^="chat"] [class^="content"] [class^="chatContent"] {
 	background-color: var(--content-background) !important;
 }
 
+/* server/ch title bar */
 [class^="chat"] [class^="title"]:not([class^="uploadArea"] [class^="title"]),
 [class^="sidebar"] [class^="container"] [class^="header"]
 {
 	background-color: var(--content-highlight) !important;
 }
 
+/* topbar's wrong shadow fix (not worked, we should fix this) */
 [class^="chat"] [class^="title"] [class^="children"] [class^="iconWrapper"]::after {
 	display: none !important;
 	width: 0px !important;
 }
 
-[class^="members"] [class^="content"] {
-	text-shadow: 0 0 10px var(--content-text);
-}
-
+/* member side bar */
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="roleColor"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="name"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="subText"] {
-	overflow: visible !important;
+    overflow: visible !important;
+}
+[class^="members"] [class^="content"] {
+    text-shadow: 0 0 10px var(--content-text);
 }
 
+/* friends page */
 [class^="peopleColumn"] {
 	background-color: var(--content-background) !important;
 }
 
+/* upload popup */
 [class^="uploadModal"] {
 	background: var(--content-light) !important;
 }
 [class^="uploadModal"] [class^="footer"] {
 	background: var(--content-background) !important;
+}
+
+/* search bg */
+[class^="search"] [class^="searchBar"] {
+	background: var(--content-mid) !important;
 }
