@@ -87,7 +87,7 @@
 	background-color: var(--content-background) !important;
 }
 
-[class^="chat"] [class^="title"],
+[class^="chat"] [class^="title"]:not([class^="uploadArea"] [class^="title"]),
 [class^="sidebar"] [class^="container"] [class^="header"]
 {
 	background-color: var(--content-highlight) !important;
