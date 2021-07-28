@@ -1,53 +1,105 @@
 :root {
-  --content-light: #ffeef5;
-  --content-background: #FFE3F1;
-  --content-highlight: #FEAFCE;
-  --content-mid: #FEC9DD;
-  --content-darker: #F69197;
-  --content-text: #30191b;
-  --content-brand: #fb8a91;
+	/* IMPORT LIGHT THEME */
+	--header-primary: #060607;
+	--header-secondary: #4f5660;
+	--text-normal: #2e3338;
+	--text-muted: #747f8d;
+	--text-link: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
+	--text-link-low-saturation: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
+	--text-positive: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+	--text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+	--text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+	--text-brand: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--interactive-normal: #4f5660;
+	--interactive-hover: #2e3338;
+	--interactive-active: #060607;
+	--interactive-muted: #c7ccd1;
+	--background-mobile-primary: #f8f9f9;
+	--background-mobile-secondary: #fff;
+	--background-modifier-hover: rgba(116,127,141,0.08);
+	--background-modifier-active: rgba(116,127,141,0.16);
+	--background-modifier-selected: rgba(116,127,141,0.24);
+	--background-modifier-accent: rgba(6,6,7,0.08);
+	--info-positive-text: #000;
+	--info-warning-text: #000;
+	--info-danger-text: #000;
+	--info-help-background: hsla(212,calc(var(--saturation-factor, 1)*100%),43.9%,0.1);
+	--info-help-foreground: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
+	--info-help-text: #000;
+	--status-warning-text: #fff;
+	--elevation-stroke: 0 0 0 1px rgba(6,6,7,0.08);
+	--elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
+	--elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
+	--elevation-high: 0 8px 16px rgba(0,0,0,0.16);
+	--logo-primary: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+	--background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.2);
+	--background-message-hover: rgba(6,6,7,0.02);
+	--guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
+	--activity-card-background: #fff;
+	--textbox-markdown-syntax: #6a7480;
+	--deprecated-card-bg: #f8f9f9;
+	--deprecated-card-editable-bg: rgba(246,246,247,0.6);
+	--deprecated-store-bg: #f8f9f9;
+	--deprecated-quickswitcher-input-background: #fff;
+	--deprecated-quickswitcher-input-placeholder: rgba(79,84,92,0.3);
+	--deprecated-text-input-bg: rgba(79,84,92,0.02);
+	--deprecated-text-input-border: rgba(79,84,92,0.3);
+	--deprecated-text-input-border-hover: #b9bbbe;
+	--deprecated-text-input-border-disabled: #dcddde;
+	--deprecated-text-input-prefix: #b9bbbe;
 
-  --brand-experiment: var(--content-brand) !important;
+	/* CUSTOM */
+	--content-light: #ffeef5;
+	--content-background: #FFE3F1;
+	--content-highlight: #FEAFCE;
+	--content-mid: #FEC9DD;
+	--content-darker: #F69197;
+	--content-text: #30191b;
+	--content-brand: #fb8a91;
 
-  --background-floating: var(--content-light) !important;
-  --background-primary: var(--content-background) !important;
-  --background-accent: var(--content-darker) !important;
-  --background-secondary: var(--content-mid) !important;
-  --background-tertiary: var(--content-darker) !important;
+	--brand-experiment: var(--content-brand) !important;
+	--background-floating: var(--content-light) !important;
+	--background-primary: var(--content-background) !important;
+	--background-accent: var(--content-darker) !important;
+	--background-secondary: var(--content-mid) !important;
+	--background-tertiary: var(--content-darker) !important;
 
-  --channels-default: var(--content-text) !important;
-  --channeltextarea-background: var(--content-mid) !important;
-  --background-secondary-alt: var(--content-mid) !important;
+	--channels-default: var(--content-text) !important;
+	--channeltextarea-background: var(--content-mid) !important;
+	--background-secondary-alt: var(--content-mid) !important;
 
-  --scrollbar-auto-track: var(--content-light) !important;
-  --scrollbar-auto-thumb: var(--content-darker) !important;
-  --scrollbar-auto-scrollbar-color-track: var(--content-light) !important;
-  --scrollbar-auto-scrollbar-color-thumb: var(--content-darker) !important;
-  --scrollbar-thin-track: var(--content-light) !important;
-  --scrollbar-thin-thumb: var(--content-darker) !important;
+	--scrollbar-auto-track: var(--content-light) !important;
+	--scrollbar-auto-thumb: var(--content-darker) !important;
+	--scrollbar-auto-scrollbar-color-track: var(--content-light) !important;
+	--scrollbar-auto-scrollbar-color-thumb: var(--content-darker) !important;
+	--scrollbar-thin-track: var(--content-light) !important;
+	--scrollbar-thin-thumb: var(--content-darker) !important;
 }
 
 #gif-picker-tab-panel {
-  background-color: var(--content-mid) !important;
+	background-color: var(--content-mid) !important;
 }
 
 [class^="chat"] [class^="content"] [class^="chatContent"] {
-  background-color: var(--content-background) !important;
+	background-color: var(--content-background) !important;
 }
 
 [class^="chat"] [class^="title"],
 [class^="sidebar"] [class^="container"] [class^="header"]
 {
-  background-color: var(--content-highlight) !important;
+	background-color: var(--content-highlight) !important;
 }
 
 [class^="chat"] [class^="title"] [class^="children"] [class^="iconWrapper"]::after {
-  display: none !important;
-  width: 0px !important;
+	display: none !important;
+	width: 0px !important;
 }
 
 [class^="members"] [class^="content"] {
-  text-shadow: 0 0 10px var(--content-text);
+	text-shadow: 0 0 10px var(--content-text);
 }
 
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"],
@@ -55,16 +107,16 @@
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="roleColor"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="name"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="subText"] {
-  overflow: visible !important;
+	overflow: visible !important;
 }
 
 [class^="peopleColumn"] {
-  background-color: var(--content-background) !important;
+	background-color: var(--content-background) !important;
 }
 
 [class^="uploadModal"] {
-  background: var(--content-light) !important;
+	background: var(--content-light) !important;
 }
 [class^="uploadModal"] [class^="footer"] {
-  background: var(--content-background) !important;
+	background: var(--content-background) !important;
 }
