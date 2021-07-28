@@ -1,6 +1,10 @@
 
 # Discord Cherry Blossom Theme
 
+## PREVIEW
+
+
+
 ## KOREAN - 읽어줘.맠다운문서
 
 먼저 [더나은 디스코드](https://betterdiscord.app) 를 받고 난 뒤  

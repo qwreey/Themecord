@@ -1,59 +1,53 @@
-/* var 지정 */
 :root {
-    --content-light: #ffeef5;
-    --content-background: #FFE3F1;
-    --content-highlight: #FEAFCE;
-    --content-mid: #FEC9DD;
-    --content-darker: #F69197;
-    --content-text: #30191b;
-    --content-brand: #fb8a91;
+  --content-light: #ffeef5;
+  --content-background: #FFE3F1;
+  --content-highlight: #FEAFCE;
+  --content-mid: #FEC9DD;
+  --content-darker: #F69197;
+  --content-text: #30191b;
+  --content-brand: #fb8a91;
 
-    --brand-experiment: var(--content-brand) !important; /* 버튼 컬러 */
+  --brand-experiment: var(--content-brand) !important;
 
-    --background-floating: var(--content-light) !important; /* 마우스 가져다 대면 뜨는거 */
-    --background-primary: var(--content-background) !important; /* 배경 */
-    --background-accent: var(--content-darker) !important; /* 오래된 메시지 레이블, 읽지 않음 레이블 등 */
-    --background-secondary: var(--content-mid) !important; /* 양옆 사이드바 (서버 채널바 / 유저바) */
-    --background-tertiary: var(--content-darker) !important; /* 서버 선택과 상단바 부분 */
+  --background-floating: var(--content-light) !important;
+  --background-primary: var(--content-background) !important;
+  --background-accent: var(--content-darker) !important;
+  --background-secondary: var(--content-mid) !important;
+  --background-tertiary: var(--content-darker) !important;
 
-    --channels-default: var(--content-text) !important; /* 채널 글자 */
-    --channeltextarea-background: var(--content-mid) !important; /* 입력창 */
-    --background-secondary-alt: var(--content-mid) !important; /*자신 프로필, 설정 여는 부분 */
+  --channels-default: var(--content-text) !important;
+  --channeltextarea-background: var(--content-mid) !important;
+  --background-secondary-alt: var(--content-mid) !important;
 
-    --scrollbar-auto-track: var(--content-light) !important;
-    --scrollbar-auto-thumb: var(--content-darker) !important;
-    --scrollbar-auto-scrollbar-color-track: var(--content-light) !important;
-    --scrollbar-auto-scrollbar-color-thumb: var(--content-darker) !important;
-    --scrollbar-thin-track: var(--content-light) !important;
-    --scrollbar-thin-thumb: var(--content-darker) !important;
+  --scrollbar-auto-track: var(--content-light) !important;
+  --scrollbar-auto-thumb: var(--content-darker) !important;
+  --scrollbar-auto-scrollbar-color-track: var(--content-light) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--content-darker) !important;
+  --scrollbar-thin-track: var(--content-light) !important;
+  --scrollbar-thin-thumb: var(--content-darker) !important;
 }
 
-/* gif 선택 창 */
 #gif-picker-tab-panel {
-    background-color: var(--content-mid) !important;
+  background-color: var(--content-mid) !important;
 }
 
-/* 챗창 */
 [class^="chat"] [class^="content"] [class^="chatContent"] {
-    background-color: var(--content-background) !important;
+  background-color: var(--content-background) !important;
 }
 
-[class^="chat"] [class^="title"], /* 챗창 타이틀 */
-[class^="sidebar"] [class^="container"] [class^="header"] /* 서버 사이드 패널 상단바 */
+[class^="chat"] [class^="title"],
+[class^="sidebar"] [class^="container"] [class^="header"]
 {
-    background-color: var(--content-highlight) !important;
+  background-color: var(--content-highlight) !important;
 }
 
-/* 타이틀에 이상한 쉐도우 */
 [class^="chat"] [class^="title"] [class^="children"] [class^="iconWrapper"]::after {
-    display: none !important;
-    width: 0px !important;
+  display: none !important;
+  width: 0px !important;
 }
 
-/* 맴버 창 */
 [class^="members"] [class^="content"] {
-    /*background-color: var(--content-mid) !important;*/
-    text-shadow: 0 0 10px var(--content-text);
+  text-shadow: 0 0 10px var(--content-text);
 }
 
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"],
@@ -61,18 +55,16 @@
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="roleColor"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="name"],
 [class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="subText"] {
-    overflow: visible !important;
+  overflow: visible !important;
 }
 
-/* 친구 창 */
 [class^="peopleColumn"] {
-    background-color: var(--content-background) !important;
+  background-color: var(--content-background) !important;
 }
 
-/* 업로드 창 */
-[class^="uploadModal"] { /* 바디 (팝업창) */
-    background: var(--content-light) !important;
+[class^="uploadModal"] {
+  background: var(--content-light) !important;
 }
-[class^="uploadModal"] [class^="footer"] { /* 아래 푸터 */
-    background: var(--content-background) !important;
+[class^="uploadModal"] [class^="footer"] {
+  background: var(--content-background) !important;
 }
