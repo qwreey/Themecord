@@ -3,7 +3,13 @@
 
 ## PREVIEW
 
-
+![이미지](./img/Server.png)  
+![이미지](./img/Settings.png)  
+![이미지](./img/UploadPopup.png)  
+![이미지](./img/UserProfile.png)  
+![이미지](./img/FriendPage.png)  
+![이미지](./img/GIF.png)  
+![이미지](./img/Emoji.png)  
 
 ## KOREAN - 읽어줘.맠다운문서
 
