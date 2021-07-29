@@ -10,7 +10,7 @@
 	--text-positive: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
 	--text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
 	--text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
-	--text-brand: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--text-brand: hsl(356,calc(var(--saturation-factor, 1)*85.6%),64.7%);
 	--interactive-normal: #4f5660;
 	--interactive-hover: #2e3338;
 	--interactive-active: #060607;
@@ -32,9 +32,9 @@
 	--elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
 	--elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
 	--elevation-high: 0 8px 16px rgba(0,0,0,0.16);
-	--logo-primary: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
-	--control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
-	--control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--logo-primary: hsl(356,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--control-brand-foreground: hsl(356,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	--control-brand-foreground-new: hsl(356,calc(var(--saturation-factor, 1)*85.6%),64.7%);
 	--background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
 	--background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.2);
 	--background-message-hover: rgba(6,6,7,0.02);
@@ -61,23 +61,68 @@
 	--content-text: #30191b;
 	--content-brand: #fb8a91;
 
-	--brand-experiment: var(--content-brand) !important;
 	--background-floating: var(--content-light) !important;
 	--background-primary: var(--content-background) !important;
 	--background-accent: var(--content-darker) !important;
 	--background-secondary: var(--content-mid) !important;
 	--background-tertiary: var(--content-darker) !important;
-
+	
 	--channels-default: var(--content-text) !important;
 	--channeltextarea-background: var(--content-mid) !important;
 	--background-secondary-alt: var(--content-mid) !important;
-
+	
 	--scrollbar-auto-track: var(--content-light) !important;
 	--scrollbar-auto-thumb: var(--content-darker) !important;
 	--scrollbar-auto-scrollbar-color-track: var(--content-light) !important;
 	--scrollbar-auto-scrollbar-color-thumb: var(--content-darker) !important;
 	--scrollbar-thin-track: var(--content-light) !important;
 	--scrollbar-thin-thumb: var(--content-darker) !important;
+	
+	--brand-experiment: var(--content-brand) !important;
+	--brand-experiment-100: hsl(354,calc(var(--saturation-factor, 1)*77.8%),98.2%);
+    --brand-experiment-130: hsl(355,calc(var(--saturation-factor, 1)*87.5%),96.9%);
+    --brand-experiment-160: hsl(356,calc(var(--saturation-factor, 1)*84.6%),94.9%);
+    --brand-experiment-200: hsl(355,calc(var(--saturation-factor, 1)*83.3%),92.9%);
+    --brand-experiment-230: hsl(355,calc(var(--saturation-factor, 1)*87%),91%);
+    --brand-experiment-260: hsl(356,calc(var(--saturation-factor, 1)*86.2%),88.6%);
+    --brand-experiment-300: hsl(356,calc(var(--saturation-factor, 1)*86.1%),85.9%);
+    --brand-experiment-330: hsl(356,calc(var(--saturation-factor, 1)*85.1%),81.6%);
+    --brand-experiment-360: hsl(356,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --brand-experiment-400: hsl(356,calc(var(--saturation-factor, 1)*86.1%),71.8%);
+    --brand-experiment-430: hsl(356,calc(var(--saturation-factor, 1)*85.7%),69.8%);
+    --brand-experiment-460: hsl(356,calc(var(--saturation-factor, 1)*85.5%),67.5%);
+    --brand-experiment-500: hsl(356,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+    --brand-experiment-530: hsl(356,calc(var(--saturation-factor, 1)*66.7%),58.8%);
+    --brand-experiment-560: hsl(356,calc(var(--saturation-factor, 1)*51.4%),52.4%);
+    --brand-experiment-600: hsl(356,calc(var(--saturation-factor, 1)*46.7%),44.1%);
+    --brand-experiment-630: hsl(356,calc(var(--saturation-factor, 1)*46.7%),38.2%);
+    --brand-experiment-660: hsl(356,calc(var(--saturation-factor, 1)*47.1%),33.3%);
+    --brand-experiment-700: hsl(356,calc(var(--saturation-factor, 1)*47%),25.9%);
+    --brand-experiment-730: hsl(356,calc(var(--saturation-factor, 1)*46.8%),24.3%);
+    --brand-experiment-760: hsl(234,calc(var(--saturation-factor, 1)*46.9%),22.2%);
+    --brand-experiment-800: hsl(356,calc(var(--saturation-factor, 1)*47.5%),19.4%);
+    --brand-experiment-830: hsl(356,calc(var(--saturation-factor, 1)*47.4%),14.9%);
+    --brand-experiment-860: hsl(356,calc(var(--saturation-factor, 1)*46.9%),9.6%);
+    --brand-experiment-900: hsl(233,calc(var(--saturation-factor, 1)*50%),3.1%);
+    --brand-experiment-05a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.05);
+    --brand-experiment-10a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.1);
+    --brand-experiment-15a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.15);
+    --brand-experiment-20a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.2);
+    --brand-experiment-25a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.25);
+    --brand-experiment-30a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.3);
+    --brand-experiment-35a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.35);
+    --brand-experiment-40a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.4);
+    --brand-experiment-45a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.45);
+    --brand-experiment-50a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.5);
+    --brand-experiment-55a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.55);
+    --brand-experiment-60a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.6);
+    --brand-experiment-65a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.65);
+    --brand-experiment-70a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.7);
+    --brand-experiment-75a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.75);
+    --brand-experiment-80a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.8);
+    --brand-experiment-85a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.85);
+    --brand-experiment-90a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.9);
+    --brand-experiment-95a: hsla(356,calc(var(--saturation-factor, 1)*85.6%),64.7%,0.95);
 }
 
 /* gif/emoji tab */
@@ -131,4 +176,9 @@
 /* search bg */
 [class^="search"] [class^="searchBar"] {
 	background: var(--content-mid) !important;
+}
+
+/* button text */
+[class^="button"] [class^="contents"] span {
+	color: #000 !important;
 }
