@@ -238,10 +238,12 @@
 
 /* popup (open link, update name, new sound device, ...) */
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modalRoot-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] {
 	background-color: var(--content-mid) !important;
 }
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"] > [class^="form-"] > [class*="footer-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modalRoot-"] > [class*="footer-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] > [class*="footer-"] {
 	background-color: var(--content-highlight) !important;
 }
