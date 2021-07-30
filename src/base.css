@@ -1,3 +1,4 @@
+
 /* main color */
 :root {
 	/* IMPORT LIGHT THEME */
@@ -52,15 +53,6 @@
 	--deprecated-text-input-border-disabled: #dcddde;
 	--deprecated-text-input-prefix: #b9bbbe;
 
-	/* CUSTOM */
-	--content-light: #ffeef5;
-	--content-background: #FFE3F1;
-	--content-highlight: #FEAFCE;
-	--content-mid: #FEC9DD;
-	--content-darker: #F69197;
-	--content-text: #30191b;
-	--content-brand: #fb8a91;
-
 	--background-floating: var(--content-light) !important;
 	--background-primary: var(--content-background) !important;
 	--background-accent: var(--content-darker) !important;
@@ -70,12 +62,12 @@
 	--channels-default: var(--content-text) !important;
 	--channeltextarea-background: var(--content-mid) !important;
 	--background-secondary-alt: var(--content-mid) !important;
-	
-	--scrollbar-auto-track: var(--content-light) !important;
+
+	--scrollbar-auto-track: transparent !important;
 	--scrollbar-auto-thumb: var(--content-darker) !important;
-	--scrollbar-auto-scrollbar-color-track: var(--content-light) !important;
+	--scrollbar-auto-scrollbar-color-track: transparent !important;
 	--scrollbar-auto-scrollbar-color-thumb: var(--content-darker) !important;
-	--scrollbar-thin-track: var(--content-light) !important;
+	--scrollbar-thin-track: transparent !important;
 	--scrollbar-thin-thumb: var(--content-darker) !important;
 	
 	--brand-experiment: var(--content-brand) !important;
@@ -131,54 +123,124 @@
 }
 
 /* chat background */
-[class^="chat"] [class^="content"] [class^="chatContent"] {
+[class^="chat-"] > [class^="content-"] > [class^="chatContent-"] {
 	background-color: var(--content-background) !important;
 }
 
+/* unread */
+[class^="unreadMentionsBar-"] [class^="text-"] {
+    color: var(--content-light) !important;
+}
+
 /* server/ch title bar */
-[class^="chat"] [class^="title"]:not([class^="uploadArea"] [class^="title"]),
-[class^="sidebar"] [class^="container"] [class^="header"]
-{
+[class^="chat-"] > [class^="title-"],
+[class^="sidebar-"] > [class^="container-"] > [class^="container-"] > [class^="header-"] {
 	background-color: var(--content-highlight) !important;
+    box-shadow: 0px 0px 12px var(--content-darker);
+}
+[class^="sidebar-"] > [class^="panels-"] {
+    box-shadow: 0px 0px 12px var(--content-darker) !important;
+}
+
+/* new messages bar */
+[class^="newMessagesBar-"] > [class^="barButtonMain-"] > [class^="span-"],
+[class^="newMessagesBar-"] > [class^="barButtonAlt-"] {
+    color: var(--content-text) !important;
+}
+
+/* popout (search) NEED MORE FIXS */
+[id^="popout_"] > [class^="container-"] {
+    box-shadow: 0px 0px 12px var(--content-darker) !important;
+    background-color: var(--content-mid) !important;
+}
+[class*="searchOption-"]::after,
+[id*="search-results-"]::after {
+    display: none !important;
+}
+[class*="searchOption-"] > span[class^="filter"],
+[id*="search-results-"] > [class^="nonText-"] {
+    color: var(--content-text) !important;
+}
+[class^="resultsGroup-"] > [class^="header-"] {
+    color: var(--content-text-darker) !important;
+}
+[class^="resultsGroup-"] > [class*="selected-"] {
+    background-color: var(--content-highlight) !important;
 }
 
 /* topbar's wrong shadow fix (not worked, we should fix this) */
-[class^="chat"] [class^="title"] [class^="children"] [class^="iconWrapper"]::after {
+[class^="chat-"] > [class^="title-"] > [class^="children-"]::after {
 	display: none !important;
 	width: 0px !important;
 }
 
-/* member side bar */
-[class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"],
-[class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"],
-[class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="roleColor"],
-[class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="nameAndDecorators"] [class^="name"],
-[class^="members"] [class^="content"] [class^="member"] [class^="layout"] [class^="content"] [class^="subText"] {
+/* member side bar (text shadow) */
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"],
+[class^="members-"] > [class^="content-"] > [class^="membersGroup-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="nameAndDecorators-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="nameAndDecorators-"] > [class^="name-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="nameAndDecorators-"] > [class^="name-"] > [class^="roleColor-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="subText-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="subText-"] > [class^="activity-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="subText-"] > [class^="activity-"] > [class^="activityText-"],
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="subText-"] > [class^="activity-"] > [class^="activityText-"] strong {
     overflow: visible !important;
 }
-[class^="members"] [class^="content"] {
-    text-shadow: 0 0 10px var(--content-text);
+[class^="members-"] > [class^="content-"] {
+    text-shadow: 0 0 10px var(--content-text-shadow);
+}
+
+/* msg header (role color) */
+[class^="message-"],
+[class^="message-"] > [class^="repliedMessage-"],
+[class^="message-"] > [class^="repliedMessage-"] > [class^="username-"],
+[class^="message-"] > [class^="contents-"],
+[class^="message-"] > [class^="contents-"] > [class^="header-"],
+[class^="message-"] > [class^="contents-"] > [class^="header-"] > [class^="headerText-"],
+[class^="message-"] > [class^="contents-"] > [class^="header-"] > [class^="headerText-"] > [class^="username-"] {
+    overflow: visible;
+}
+[class^="message-"] > [class^="repliedMessage-"] > [class^="username-"],
+[class^="message-"] > [class^="contents-"] > [class^="header-"] > [class^="headerText-"] > [class^="username-"] {
+    text-shadow: 0 0 10px var(--content-text-shadow);
 }
 
 /* friends page */
-[class^="peopleColumn"] {
+[class^="peopleColumn-"] {
 	background-color: var(--content-background) !important;
 }
 
 /* upload popup */
-[class^="uploadModal"] {
+[class^="uploadModal-"] {
 	background: var(--content-light) !important;
 }
-[class^="uploadModal"] [class^="footer"] {
+[class^="uploadArea-"] > * > * > *,
+[class^="uploadArea-"] > * > * > * > * {
+    color: var(--content-text) !important;
+}
+[class^="uploadModal-"] > [class^="footer"] {
 	background: var(--content-background) !important;
 }
 
 /* search bg */
-[class^="search"] [class^="searchBar"] {
+[class^="search-"] > [class^="searchBar-"] {
 	background: var(--content-mid) !important;
 }
 
 /* button text */
-[class^="button"] [class^="contents"] span {
+[class^="button-"] > [class^="contents-"] span {
 	color: #000 !important;
+}
+
+/* mention */
+.mention {
+    color: var(--brand-experiment-530) !important;
+}
+
+/* autocomplete */
+[class^="autocomplete-"]:not([class^="autocompleteRowContent-"]):not([class^="autocompleteRowIcon-"]) {
+    background-color: var(--content-mid);
+}
+[class^="autocompleteRowVertical-"] > [class^="base-"][class*="selected-"] {
+    background-color: var(--content-highlight) !important;
 }

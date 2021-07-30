@@ -1,0 +1,12 @@
+:root {
+	--content-light:       #ffeef5;
+	--content-background:  #FFE3F1;
+	--content-mid:         #FEC9DD;
+	--content-brand:       #fb8a91;
+	--content-highlight:   #FEAFCE;
+	--content-darker:      #F69197;
+	--content-text:        #30191b;
+    --content-text-shadow: #271516b6;
+	--content-text-darker: #201112;
+}
+@import "https://qwreey75.github.io/Themecord/src/base.css";
