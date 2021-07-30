@@ -15,7 +15,7 @@
 
 ### lilac theme
 
-라일락 테마 / just make for me  
+라일락 테마 / qwreey75 (yes, is me) 
 ![이미지](./src/lilac/preview.png)  
 
 ## KOREAN - 읽어줘.적용법
