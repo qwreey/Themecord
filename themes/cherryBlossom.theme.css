@@ -5,4 +5,6 @@
  * @description 벚꽃색 태마!!!!!!!!!!!!!
  * @source https://github.com/qwreey75/Themecord
 **/
-@import "https://qwreey75.github.io/Themecord/src/lilac/main.css";
+
+@import url("https://qwreey75.github.io/Themecord/src/cherryBlossom/main.css");
+@import url("https://qwreey75.github.io/Themecord/src/base.css");

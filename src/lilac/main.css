@@ -6,7 +6,6 @@
 	--content-highlight:   #DDAEE9;
 	--content-darker:      #CD90DE;
 	--content-text:        #4b2b50;
-    --content-text-shadow: #4b2b5098;
+	--content-text-shadow: #4b2b5098;
 	--content-text-darker: #2d1930;
 }
-@import "https://qwreey75.github.io/Themecord/src/base.css";
