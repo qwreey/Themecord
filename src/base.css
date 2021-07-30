@@ -227,11 +227,6 @@
 	background: var(--content-mid) !important;
 }
 
-/* button text */
-[class^="button-"] > [class^="contents-"] span {
-	color: #000 !important;
-}
-
 /* mention */
 .mention {
 	color: var(--brand-experiment-530) !important;
@@ -245,10 +240,29 @@
 	background-color: var(--content-highlight) !important;
 }
 
-/* open link */
-[class^="layerContainer"] [class^="layer"] [class^="focusLock"] [class^="container"] {
+/* popup (open link, update name, new sound device, ...) */
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] {
 	background-color: var(--content-mid) !important;
 }
-[class^="layerContainer"] [class^="layer"] [class^="focusLock"] [class^="container"] [class^="form"] [class*="footer"] {
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"] > [class^="form-"] > [class*="footer-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] > [class*="footer-"] {
 	background-color: var(--content-highlight) !important;
+}
+[class^="colorStandard-"] {
+    color: var(--content-text) !important;
+}
+
+/* Button color */
+[class^="secondaryButton-"],
+[class^="cancelButton-"] {
+    background-color: var(--content-light) !important;
+    color: var(--content-text) !important;
+}
+[class^="primaryButton-"],
+[class^="button-"][class*="lookFilled-"] {
+    color: var(--content-text) !important;
+}
+[class^="button-"] > [class^="contents-"] span {
+	color: var(--content-text) !important;
 }
