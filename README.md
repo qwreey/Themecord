@@ -5,18 +5,18 @@
 
 ### cherryBlossom theme
 
-벚꽃색 테마 / Order: 상아리
-![이미지](./img/cherryBlossom.png)  
+벚꽃색 테마 / Order: 상아리  
+![이미지](./src/cherryBlossom/preview.png)  
 
 ### sky theme
 
-하늘색 테마 / Order: ! ＰＬＹＵＲＳＲ ! (aka '남자에요', '존경이')
-![이미지](./img/sky.png)  
+하늘색 테마 / Order: ! ＰＬＹＵＲＳＲ ! (aka '남자에요', '존경이')  
+![이미지](./src/sky/preview.png)  
 
 ### lilac theme
 
-라일락 테마 / just make for me
-![이미지](./img/lilac.png)  
+라일락 테마 / just make for me  
+![이미지](./src/lilac/preview.png)  
 
 ## KOREAN - 읽어줘.적용법
 
