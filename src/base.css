@@ -127,9 +127,15 @@
 	background-color: var(--content-background) !important;
 }
 
-/* unread */
+/* unread server */
 [class^="unreadMentionsBar-"] [class^="text-"] {
 	color: var(--content-light) !important;
+}
+
+/* new messages bar */
+[class^="newMessagesBar-"] > [class^="barButtonMain-"] > [class^="span-"],
+[class^="newMessagesBar-"] > [class^="barButtonAlt-"] {
+	color: var(--content-text) !important;
 }
 
 /* server/ch title bar */
@@ -141,11 +147,12 @@
 [class^="sidebar-"] > [class^="panels-"] {
 	box-shadow: 0px 0px 12px var(--content-darker) !important;
 }
-
-/* new messages bar */
-[class^="newMessagesBar-"] > [class^="barButtonMain-"] > [class^="span-"],
-[class^="newMessagesBar-"] > [class^="barButtonAlt-"] {
-	color: var(--content-text) !important;
+[class^="search-"] > [class^="searchBar-"] { /* search bg */
+	background: var(--content-mid) !important;
+}
+[class^="chat-"] > [class^="title-"] > [class^="children-"]::after { /* topbar's wrong shadow fix (not worked, we should fix this) */
+	display: none !important;
+	width: 0px !important;
 }
 
 /* popout (search) NEED MORE FIXS */
@@ -166,12 +173,6 @@
 }
 [class^="resultsGroup-"] > [class*="selected-"] {
 	background-color: var(--content-highlight) !important;
-}
-
-/* topbar's wrong shadow fix (not worked, we should fix this) */
-[class^="chat-"] > [class^="title-"] > [class^="children-"]::after {
-	display: none !important;
-	width: 0px !important;
 }
 
 /* member side bar (text shadow) */
@@ -220,11 +221,6 @@
 }
 [class^="uploadModal-"] > [class^="footer"] {
 	background: var(--content-background) !important;
-}
-
-/* search bg */
-[class^="search-"] > [class^="searchBar-"] {
-	background: var(--content-mid) !important;
 }
 
 /* mention */
