@@ -238,6 +238,7 @@
 /* popup (open link, update name, new sound device, ...) */
 [class^="phoneVerificationModal-"], /* phone verification */
 [class*="phoneFieldPopout-"], /* field (autocomp) */
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modal-"], /* server description popup */
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modalRoot-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"],
@@ -267,6 +268,7 @@
 /* popups background */
 [class^="phoneVerificationModal"],
 [class*="phoneFieldPopout"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modal-"] > [class*="footer-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"] > [class^="form-"] > [class*="footer-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modalRoot-"] > [class*="footer-"],
 [class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] > [class*="footer-"],
@@ -293,6 +295,11 @@
 [class*="button-"][class*="sendButton"] > [class^="contents-"],
 [class*="button-"][class*="lookLink-"] > [class^="contents-"] {
     color: var(--content-text-darker) !important;
+}
+
+/* icon color */
+[class^="icon-"] {
+	color: var(--content-text) !important;
 }
 
 /* Transaction History */
@@ -327,8 +334,49 @@
 	color: var(--content-text-darker) !important;
 }
 
-/* settings notice */
+/* settings notice (label) */
 [class^="formNotice-"],
 [class*="previewOverlayInner-"] {
 	background-color: var(--content-mid) !important;
+}
+
+/* settings profile */
+[class^="accountProfileCard-"] {
+	background-color: var(--content-highlight) !important;
+}
+
+/* bot tag */
+[class*="nameAndDecorators-"] > [class*="Tag-"] {
+	color: var(--content-text-darker) !important;
+	background-color: var(--content-darker) !important;
+}
+[class^="headerText-"] > [class*="Tag-"] {
+	color: var(--content-text-darker) !important;
+	background-color: var(--content-darker) !important;
+}
+
+/* unmute button color (in dm) */
+[class^="chatContent-"] > [class^="form-"] > [class^="wrapper-"] > [class^="buttonContainer-"] > [class^="button-"] {
+	background-color: var(--content-light) !important;	
+}
+
+/* home button */
+foreignObject > [class^="wrapper-"][class*="selected-"] > [class^="childWrapper-"] > [class^="homeIcon-"] {
+	color: var(--content-text-darker) !important;
+}
+foreignObject > [class^="wrapper-"]:not([class*="selected-"]) > [class^="childWrapper-"] > [class^="homeIcon-"] {
+	color: var(--content-text) !important;
+}
+
+/* server settings */
+main > div > [class^="children-"] > div > [class^="marginBottom"] > [class*="emojiRow-"] [class*="card-"]::before { /* emoji page */
+	background-color: var(--content-light) !important;
+}
+[class^="serverBoostTabItem-"] {
+	color: var(--interactive-normal) !important;
+}
+
+/* home search button */
+[class^="searchBar-"] [class^="searchBarComponent-"] {
+	background-color: var(--content-highlight) !important;
 }
