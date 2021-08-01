@@ -51,6 +51,20 @@
 	--deprecated-text-input-border-hover: #b9bbbe;
 	--deprecated-text-input-border-disabled: #dcddde;
 	--deprecated-text-input-prefix: #b9bbbe;
+	--info-positive-background: hsla(139,calc(var(--saturation-factor, 1)*47.3%),43.9%,0.1);
+    --info-positive-foreground: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+    --info-warning-background: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --info-warning-foreground: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --info-danger-background: hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,0.1);
+    --info-danger-foreground: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --status-positive-background: hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+    --status-positive-text: #fff;
+    --status-warning-background: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --status-danger-background: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --status-danger-text: #fff;
+    --focus-primary: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+	--brightness: calc(0.5 + var(--saturation-factor, 1)*0.5);
+    --contrast: var(--saturation-factor,1);
 
 	--background-floating: var(--content-light) !important;
 	--background-primary: var(--content-background) !important;
@@ -299,6 +313,9 @@
 
 /* icon color */
 [class^="icon-"] {
+	color: var(--content-text) !important;
+}
+[class^="inner-"] > [class^="buttons-"] > [class^="contents-"] > [class^="buttonWrapper-"] svg {
 	color: var(--content-text) !important;
 }
 

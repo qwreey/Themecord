@@ -1,0 +1,12 @@
+:root {
+	--content-light:       #19131d;
+	--content-background:  #2B2031;
+	--content-mid:         #382249;
+	--content-brand:       #684ba1;
+	--content-highlight:   #46245c;
+	--content-darker:      #4f256d;
+	--content-text:        #d3beeb;
+	--content-text-shadow: #eee3fa6e;
+	--content-text-darker: #f8f3fd;
+	--content-hsl: 275;
+}

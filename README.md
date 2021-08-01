@@ -15,8 +15,13 @@
 
 ### lilac theme
 
-라일락 테마 / qwreey75 (yes, is me) 
+라일락 테마 / qwreey75 (yes, is me)  
 ![이미지](./src/lilac/preview.png)  
+
+### void theme
+
+보이드 테마 / ???? (unknown)  
+![이미지](./src/void/preview.png)  
 
 ## KOREAN - 읽어줘.적용법
 
