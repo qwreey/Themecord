@@ -346,11 +346,11 @@
 }
 
 /* bot tag */
-[class*="nameAndDecorators-"] > [class*="Tag-"] {
+[class*="nameAndDecorators-"] > [class*="botTag-"] {
 	color: var(--content-text-darker) !important;
 	background-color: var(--content-darker) !important;
 }
-[class^="headerText-"] > [class*="Tag-"] {
+[class^="headerText-"] > [class*="botTag-"] {
 	color: var(--content-text-darker) !important;
 	background-color: var(--content-darker) !important;
 }
