@@ -10,7 +10,7 @@
 
 ### sky theme
 
-하늘색 테마 / Order: ! ＰＬＹＵＲＳＲ ! (aka '남자에요', '존경이')  
+하늘색 테마 ~~사실 민트에 가깝다~~ / Order: ! ＰＬＹＵＲＳＲ ! (aka '남자에요', '존경이')  
 ![이미지](./src/sky/preview.png)  
 
 ### lilac theme
