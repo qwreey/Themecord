@@ -252,11 +252,11 @@
 /* popup (open link, update name, new sound device, ...) */
 [class^="phoneVerificationModal-"], /* phone verification */
 [class*="phoneFieldPopout-"], /* field (autocomp) */
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modal-"], /* server description popup */
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modalRoot-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] > form {
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="modal-"], /* server description popup */
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="container-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="modalRoot-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="root-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="root-"] > form {
 	background-color: var(--content-mid) !important;
 }
 [class^="phoneFieldPopout-"] {
@@ -282,11 +282,11 @@
 /* popups background */
 [class^="phoneVerificationModal"],
 [class*="phoneFieldPopout"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modal-"] > [class*="footer-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="container-"] > [class^="form-"] > [class*="footer-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="modalRoot-"] > [class*="footer-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] > [class*="footer-"],
-[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class^="root-"] > form > [class*="footer-"] {
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="modal-"] > [class*="footer-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="container-"] > [class^="form-"] > [class*="footer-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="modalRoot-"] > [class*="footer-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="root-"] > [class*="footer-"],
+[class^="layerContainer-"] > [class^="layer-"] > [class^="focusLock-"] > [class*="root-"] > form > [class*="footer-"] {
 	background-color: var(--content-highlight) !important;
 }
 [class^="colorStandard-"] {
