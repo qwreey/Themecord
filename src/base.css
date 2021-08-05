@@ -397,3 +397,8 @@ main > div > [class^="children-"] > div > [class^="marginBottom"] > [class*="emo
 [class^="searchBar-"] [class^="searchBarComponent-"] {
 	background-color: var(--content-highlight) !important;
 }
+
+/* edit typebar */
+[class^="layerContainer-"] [class^="toolbar-"] {
+    background-color: var(--content-highlight) !important;
+}
