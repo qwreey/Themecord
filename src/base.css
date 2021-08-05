@@ -409,11 +409,14 @@ main > div > [class^="children-"] > div > [class^="marginBottom"] > [class*="emo
 }
 
 /* home search button */
-[class^="searchBar-"] [class^="searchBarComponent-"] {
+[class^="searchBar-"] > [class^="searchBarComponent-"] {
 	background-color: var(--content-highlight) !important;
 }
 
 /* edit typebar */
-[class^="layerContainer-"] [class^="toolbar-"] {
+[class^="layerContainer-"] > [class^="toolbar-"] {
     background-color: var(--content-highlight) !important;
+}
+[class^="layerContainer-"] > [class^="toolbar-"] > [class^="button-"] > [class^="contents-"] > svg {
+    color: var(--content-light) !important;
 }
