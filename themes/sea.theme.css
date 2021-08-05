@@ -1,0 +1,21 @@
+/**
+ * @name Sky
+ * @author Qwreey75 (know as 쿼리)
+ * @version 1.0.0
+ * @description 하늘색 테마
+ * @source https://github.com/qwreey75/Themecord
+**/
+
+:root {
+	--content-light:       #e0f7fa;
+	--content-background:  #daf8fc;
+	--content-mid:         #b2ebf2;
+	--content-brand:       #b3f6ff;
+	--content-highlight:   #8adee9;
+	--content-darker:      #70cad6;
+	--content-text:        #003036;
+	--content-text-shadow: #003036b6;
+	--content-text-darker: #001e22;
+	--content-hsl: 210;
+}
+@import url("https://qwreey75.github.io/Themecord/src/base.css");
