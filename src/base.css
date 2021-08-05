@@ -203,6 +203,13 @@
 [class^="members-"] > [class^="content-"] {
 	text-shadow: 0 0 10px var(--content-text-shadow);
 }
+[class^="members-"] > [class^="content-"] > [class^="member-"] > [class^="layout-"] > [class^="content-"] > [class^="nameAndDecorators-"] > [class^="name-"] > [class^="roleColor-"] {
+	text-shadow: 0 0 10px var(--content-text-shadow)
+	-1px -1px 0px rgba(0,0,0,0.05),
+	1px 1px 0px rgba(0,0,0,0.05),
+	-1px 1px 0px rgba(0,0,0,0.05),
+	1px -1px 0px rgba(0,0,0,0.05);
+}
 
 /* msg header (role color) */
 [class^="message-"],
@@ -216,7 +223,11 @@
 }
 [class^="message-"] > [class^="repliedMessage-"] > [class^="username-"],
 [class^="message-"] > [class^="contents-"] > [class^="header-"] > [class^="headerText-"] > [class^="username-"] {
-	text-shadow: 0 0 10px var(--content-text-shadow);
+	text-shadow: 0 0 10px var(--content-text-shadow)
+	-1px -1px 0px rgba(0,0,0,0.05),
+	1px 1px 0px rgba(0,0,0,0.05),
+	-1px 1px 0px rgba(0,0,0,0.05),
+	1px -1px 0px rgba(0,0,0,0.05);;
 }
 
 /* friends page */
