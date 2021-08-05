@@ -312,9 +312,9 @@
 }
 
 /* icon color */
-[class^="icon-"] {
+/* [class^="icon-"] {
 	color: var(--content-text) !important;
-}
+} */
 [class^="inner-"] > [class^="buttons-"] > [class^="contents-"] > [class^="buttonWrapper-"] svg {
 	color: var(--content-text) !important;
 }
