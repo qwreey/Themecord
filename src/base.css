@@ -223,7 +223,7 @@
 }
 [class^="message-"] > [class^="repliedMessage-"] > [class^="username-"],
 [class^="message-"] > [class^="contents-"] > [class^="header-"] > [class^="headerText-"] > [class^="username-"] {
-	text-shadow: 0 0 10px var(--content-text-shadow)
+	text-shadow: 0 0 10px var(--content-text-shadow),
 	-1px -1px 0px rgba(0,0,0,0.05),
 	1px 1px 0px rgba(0,0,0,0.05),
 	-1px 1px 0px rgba(0,0,0,0.05),
@@ -415,8 +415,8 @@ main > div > [class^="children-"] > div > [class^="marginBottom"] > [class*="emo
 
 /* edit typebar */
 [class^="layerContainer-"] > [class^="toolbar-"] {
-    background-color: var(--content-highlight) !important;
+    background-color: var(--content-mid) !important;
 }
 [class^="layerContainer-"] > [class^="toolbar-"] > [class^="button-"] > [class^="contents-"] > svg {
-    color: var(--content-light) !important;
+    color: var(--content-text) !important;
 }
