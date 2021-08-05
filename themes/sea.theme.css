@@ -6,16 +6,5 @@
  * @source https://github.com/qwreey75/Themecord
 **/
 
+@import url("https://qwreey75.github.io/Themecord/src/sea/main.css");
 @import url("https://qwreey75.github.io/Themecord/src/base.css");
-:root {
-	--content-light:       #d0dff5;
-	--content-background:  #b2caee;
-	--content-mid:         #9fbff0;
-	--content-brand:       #80AAE7;
-	--content-highlight:   #709bdb;
-	--content-darker:      #5986c9;
-	--content-text:        #254472;
-	--content-text-shadow: #172a47b6;
-	--content-text-darker: #0e1e35;
-	--content-hsl: 216;
-}
