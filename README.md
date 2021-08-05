@@ -23,6 +23,10 @@
 보이드 테마 / ???? (unknown)  
 ![이미지](./src/void/preview.png)  
 
+### sea theme
+
+소라색 테마 / 샤블 and 앗찻's order
+![이미지](./src/sea/preview.png)
 ## KOREAN - 읽어줘.적용법
 
 ~~주의 !! : 이 테마는 다크 테마에 호환되지 않습니다, 라이트 테마로 바꾸어 주세요 ! (글자 색깔을 맞추기 위함)~~  
