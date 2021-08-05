@@ -321,6 +321,10 @@
 [class*="button-"][class*="lookLink-"] > [class^="contents-"] {
     color: var(--content-text-darker) !important;
 }
+[class*="button"][class*="lookOutlined-"] {
+	border-color: var(--content-darker) !important;
+	color: var(--content-text) !important;
+}
 
 /* icon color */
 /* [class^="icon-"] {
@@ -346,6 +350,7 @@
 [class*="select-"] >
 [class*="css-"][class*="-container"] >
 [class*="css-"][class*="-control"] {
+	color: var(--content-text) !important;
 	background-color: var(--content-mid) !important;
 }
 [class*="select-"] >
@@ -354,7 +359,6 @@
 [class^="css-"] > [class^="css-"] {
 	color: var(--content-text-darker) !important;
 }
-
 [id*="react-select-"][id*="-option-"] {
 	background-color: transparent !important;
 }
